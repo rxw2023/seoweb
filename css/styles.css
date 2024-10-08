@@ -1,0 +1,136 @@
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #007BFF; 
+        }
+        nav {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+        .main-menu {
+            display: flex;
+            align-items: center;
+        }
+        .main-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .main-menu li {
+            margin: 0 20px;
+            position: relative;
+        }
+        .main-menu a {
+            text-decoration: none;
+            color: black; 
+            font-size: 22px; 
+            transition: color 0.3s; 
+        }
+        .main-menu a:hover,
+        .main-menu a.active {
+            color: rgb(0, 200, 255);
+        }
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+        .social-icons a {
+            color: black; 
+            font-size: 28px;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: lightgray; 
+        }
+        .submenu ul {
+            display: none; 
+            position: absolute;
+            left: 0;
+            top: 100%;
+            background-color: white; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            padding: 10px 0;
+            z-index: 1000;
+        }
+        .submenu:hover ul {
+            display: block; 
+        }
+        .submenu ul li {
+            width: 200px; 
+            text-align: left;
+            padding: 5px 10px; 
+        }
+        .submenu ul li a {
+            color: black; 
+            font-size: 20px;
+            transition: color 0.3s; 
+        }
+        .submenu ul li a:hover,
+        .submenu ul li a.active {
+            color: rgb(0, 200, 255); 
+        }
+        .hamburger {
+            display: none;
+        }   
+        footer {
+            background-color: #2b2b2b; 
+            color: #ffffff; 
+            padding: 20px 0; 
+            width: 100%;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .footer-links {
+            text-align: left;
+            padding-bottom: 10px;
+            padding-left: 20px;
+        }
+        
+        .footer-links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #ffffff;
+            margin: 10px 20px; 
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            align-items: flex-start;
+            position: relative;
+        }
+        .footer-left {
+            text-align: left;
+            flex: 1;
+        }
+        .footer-right {
+            text-align: right;
+            flex: 1;
+            position: absolute;
+            bottom: 0;
+            right: 20px; 
+        }       
+        .footer-left p, .footer-right p {
+            margin: 0;
+        }
+        
+        

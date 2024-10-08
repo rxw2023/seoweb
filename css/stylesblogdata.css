@@ -1,0 +1,11 @@
+.blog-meta {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+.blog-meta i {
+    margin-right: 5px;
+}

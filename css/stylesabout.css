@@ -1,0 +1,23 @@
+.about-container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 20px; 
+    padding: 20px;
+    flex-wrap: wrap; 
+}
+.about-text {
+    flex: 1;
+    max-width: 60%; 
+    min-width: 300px; 
+    margin-right: 20px;
+}
+.about-image {
+    max-width: 40%; 
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    border-radius: 8px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    align-self: center; 
+}

@@ -1,0 +1,35 @@
+.shoe-gallery-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.shoe-gallery-container {
+    max-width: 850px;
+    width: 100%;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+.shoe-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    width: 100%;
+}
+.shoe-item {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shoe-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 8px; 
+} 
+
+

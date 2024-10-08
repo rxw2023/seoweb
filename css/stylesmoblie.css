@@ -1,0 +1,105 @@
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+        position: absolute;
+        left: 20px; 
+    }
+    .main-menu ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #fff;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+    .main-menu ul.open {
+        display: block;
+    }
+    .submenu ul {
+        display: none;
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+    .submenu:hover ul {
+        display: block;
+    }
+    .submenu ul li {
+        padding: 6px 12px;
+        text-align: left; 
+    }
+    .submenu ul {
+        width: 140px; 
+    }
+    .submenu ul li a {
+        color: black;
+        text-decoration: none;
+        font-size: 12px; 
+    }
+    .submenu ul li a:hover {
+        color: rgb(0, 200, 255); 
+    }
+    .ad-section {
+        height: 67vh; 
+    }
+    .ad-slogan {
+        font-size: 2rem; 
+    }
+    .ad-content {
+        padding: 15px 30px;
+    }
+    .about-container {
+        flex-direction: column;
+        align-items: center; 
+        text-align: center; 
+    }
+    .about-text {
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+    .about-image {
+        max-width: 100%; 
+    }
+    .footer-container {
+        flex-direction: column; 
+    }
+    .footer-left, .footer-right {
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+    .footer-right {
+        display: block;
+        margin-top: 10px;
+    }
+    hr {
+        margin: 20px 0; 
+    }
+    p {
+        margin: 10px 0;
+        line-height: 1.6; 
+        word-wrap: break-word; 
+    } 
+    .shoe-item {
+         width: 90%;
+    }
+    .shoe-gallery {
+        grid-template-columns: 1fr; 
+    }
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .blog-grid {
+        grid-template-columns: 1f
+    }
+}

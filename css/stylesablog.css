@@ -1,0 +1,35 @@
+.blog-section {
+    margin: 40px 20px;
+    text-align: center;
+}
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px 50px; 
+    justify-items: center;
+}
+.blog-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+.blog-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.blog-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #6f6f6f;
+}
+.blog-card a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+.blog-card a:hover {
+    text-decoration: underline;
+}

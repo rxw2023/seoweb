@@ -1,0 +1,44 @@
+.shoe-gallery-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.shoe-gallery-container {
+    max-width: 1200px; 
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9; 
+    border: 2px solid #ccc; 
+    border-radius: 8px; 
+}
+.shoe-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    width: 100%; 
+}
+.shoe-item {
+    border: 2px solid #ddd; 
+    padding: 10px; 
+    border-radius: 8px; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shoe-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    border-radius: 8px;
+}
+.shoe-item figure {
+    margin: 0; 
+    text-align: center;
+}
+.shoe-item figcaption {
+    margin-top: 10px; 
+    font-size: 16px; 
+    color: rgba(0, 0, 255, 0.5);
+}
