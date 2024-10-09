@@ -26,7 +26,8 @@
         display: none;
         position: relative;
         top: 0;
-        left: 0;
+        left: -40px;
+        width: 120px;
         background-color: #fff;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         z-index: 1000;
@@ -35,7 +36,7 @@
         display: block;
     }
     .submenu ul li {
-        padding: 6px 12px;
+        padding: 6px 10px;
         text-align: left; 
     }
     .submenu ul {
@@ -44,7 +45,7 @@
     .submenu ul li a {
         color: black;
         text-decoration: none;
-        font-size: 12px; 
+        font-size: 10px; 
     }
     .submenu ul li a:hover {
         color: rgb(0, 200, 255); 
