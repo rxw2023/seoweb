@@ -1,17 +1,11 @@
-#  Nginx部署静态网站步骤
-
-添加完 Nginx 的 apt 源之后，更新 apt，然后安装 Nginx：
-
+#  Nginx steps to deploy static website
 ```
 sudo apt update
 sudo apt install nginx
 ```
-
-测试
-
-http://******（替换为你的服务器 ip 地址）
-
-接下来我们需要配置 Nginx，来让它加载我们的静态网站。首先看一下他的默认配置文件，默认配置文件在 /etc/nginx/conf.d/default.conf中，我们可以用 cat /etc/nginx/conf.d/default.conf来看一下它里面的内容：
+test
+http://******（Replace with your server ip address）
+Next we need to configure Nginx to load our static website. First, take a look at its default configuration file. The default configuration file is in /etc/nginx/conf.d/default.conf. We can use cat /etc/nginx/conf.d/default.conf to take a look at its contents. :
 
 ```
 server {
@@ -59,9 +53,7 @@ server {
 
 }
 ```
-
-可以改为：
-
+Can be changed to:
 ```
 server {
     listen       80;
@@ -114,20 +106,16 @@ server {
 
 }
 ```
-
-重新部署
-
+Redeploy
 ```
 nginx -s reload
 ```
-
 ```
 git clone /path
 git add .
 git commit -m "***"
 git push
 ```
-
 ```
 cp -r /seoweb/* /var/www/html/
 ```
