@@ -5,6 +5,7 @@ sudo apt install nginx
 ```
 test
 http://******（Replace with your server ip address）
+
 Next we need to configure Nginx to load our static website. First, take a look at its default configuration file. The default configuration file is in /etc/nginx/conf.d/default.conf. We can use cat /etc/nginx/conf.d/default.conf to take a look at its contents. :
 
 ```
