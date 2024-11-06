@@ -112,13 +112,3 @@ Redeploy
 ```
 nginx -s reload
 ```
-```
-git clone /path
-git add .
-git commit -m "***"
-git push
-```
-```
-cp -r /seoweb/* /var/www/html/
-```
-
