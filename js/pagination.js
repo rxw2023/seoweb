@@ -1,6 +1,6 @@
 let currentPage = 1;
 const postsPerPage = 4; 
-const posts = document.querySelectorAll('.blog-post'); // 所有的文章元素
+const posts = document.querySelectorAll('.blog-post'); 
 const totalPosts = posts.length;
 const totalPages = Math.ceil(totalPosts / postsPerPage);
 function showPage(page) {
@@ -27,7 +27,7 @@ function updatePagination() {
         const pageBtn = document.createElement('button');
         pageBtn.textContent = i;
         if (i === currentPage) {
-            pageBtn.style.fontWeight = 'bold'; // 当前页加粗
+            pageBtn.style.fontWeight = 'bold'; 
         }
         pageBtn.onclick = () => showPage(i);
         pagination.appendChild(pageBtn);
