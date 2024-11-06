@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Blog">
     <meta name="author" content="Rxw">
-    <title>Blog 1</title>
+    <title>{{title}} - Blog</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="shortcut icon" href="img/icons8-blog-96.png">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/stylespaper.css">
     <link rel="stylesheet" href="css/stylesblog.css">
     <link rel="stylesheet" href="css/stylesblogdata.css">
     <link rel="stylesheet" href="css/stylespost-navigation.css">
     <link rel="stylesheet" href="css/stylesmoblie.css">
+    <link rel="stylesheet" href="css/stylesblogpaper.css">
 </head>
 <body>
     <header>
@@ -47,48 +47,53 @@
         <!-- Left: Blog Post Content -->
         <div class="blog-posts">
             <div class="blog-post">
-                <h3 style="text-align: center;">...</h3>
+                <h3 style="text-align: center;">{{title}}</h3>
                 <div class="blog-meta">
                     <span class="blog-date">
-                        <i class="fas fa-calendar-alt"></i> ...
+                        <i class="fas fa-calendar-alt"> {{date}}</i>
                     </span>
                 </div>
+                <!--picture-->
+                <div class="center-img">
+                    <img src="{{image_path}}" class="center-img">
+                </div>
+                <!--article-->
+                <div class="justify-text">
+                    <p>{{description}}</p>
+                </div>
+                <div class="post-navigation">
+                    <a href="{{previous_link}}" class="prev-post">Previous Post</a>
+                    <a href="{{next_link}}" class="next-post">Next Post</a>
+                </div>
             </div>
-            
-            <div class="post-navigation">
-                <a href="#" class="prev-post">Previous Post</a>
-                <a href="#" class="next-post">Next Post</a>
-            </div>
-        </div>   
+        </div>
         <!-- Right: Recent Blogs -->
         <div class="recent-blogs">
             <h3>Recent Blogs</h3>
             <ul>
-                <li><a href="#">...</a></li>
+                {% for post in recent_posts %}
+                    <li><a href="{{ post.link }}">{{ post.title }}</a></li>
+                {% endfor %}
             </ul>
         </div>
     </div>
+
     <footer>
         <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="blog.html">Blog</a>
-            <a href="about.html">About</a>
+            <a href="index.html">Home</a> 
+            <a href="blog.html">Blog</a>  
+            <a href="about.html">About</a> 
             <a href="faqs.html">FAQs</a>
         </div>
-        <hr>
+        <hr> 
         <div class="footer-container">
             <div class="footer-left">
                 <p>
                     Address: No.751 Xiaolin Avn Xiaolin Town 315321 Cixi Ningbo City Zhejiang Pro.P.R.C.<br>
                     Company: Cixi Mailele Shoes Factory<br>
                     Phone: +86 131 6590 8757<br>
-                    E-mail: H@watershoesfactory.com
-                </p>
-            </div>
-            <div class="footer-right">
-                <p>
-                    Copyright © 2024 Rxw.<br> 
-                    All rights reserved.<br>
+		    E-mail: H@watershoesfactory.com<br>
+		    Copyright © 2024 Rxw.All rights reserved.<br>
                 </p>
             </div>
         </div>
